@@ -74,7 +74,7 @@ function AnimatedRoutes() {
 
 export function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="flex flex-col min-h-screen bg-offwhite font-sans text-charcoal selection:bg-gold selection:text-white">
         <ScrollToTop />
         <ScrollProgress />

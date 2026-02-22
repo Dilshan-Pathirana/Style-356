@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0; url=./" />
+    <script>
+      ;(() => {
+        const l = window.location
+        const isProjectPages = l.hostname.endsWith('github.io')
+        const repo = l.pathname.split('/')[1]
+        const base = isProjectPages && repo ? `/${repo}/` : '/'
+
+        const baseNoSlash = base.endsWith('/') ? base.slice(0, -1) : base
+        const relativePath = l.pathname.startsWith(baseNoSlash)
+          ? l.pathname.slice(baseNoSlash.length) || '/'
+          : l.pathname
+
+        const target =
+          base +
+          `?p=${encodeURIComponent(relativePath)}` +
+          (l.search ? `&s=${encodeURIComponent(l.search.slice(1))}` : '') +
+          (l.hash ? `&h=${encodeURIComponent(l.hash.slice(1))}` : '')
+
+        l.replace(target)
+      })()
+    </script>
+  </head>
+  <body></body>
+</html>
