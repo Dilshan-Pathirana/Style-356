@@ -34,7 +34,7 @@ export const stores: Store[] = [
     address: 'Ground Floor, Havelock City Mall, Colombo 05',
     hours: 'Mon-Sun 10am - 9pm',
     image:
-      'https://images.unsplash.com/photo-1582037928769-181f2422618e?w=800&q=80',
+      'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80',
     mapLink:
       'https://www.google.com/maps/search/?api=1&query=Havelock+City+Mall',
   },
