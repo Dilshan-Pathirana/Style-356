@@ -1,0 +1,211 @@
+Software Requirements Specification
+
+Clothing Showcase Web Application
+Version 1.0
+
+1. Introduction
+1.1 Purpose
+
+This document defines the functional and non-functional requirements for a frontend-only clothing showcase web application with WhatsApp-based ordering.
+
+1.2 Scope
+
+The system is a responsive web application that:
+
+Showcases clothing collections
+
+Displays product details
+
+Enables customers to initiate orders via WhatsApp
+
+Displays store locations
+
+Does not support online checkout
+
+Does not process payments
+
+2. Overall Description
+2.1 Product Perspective
+
+Standalone frontend web application hosted on:
+
+Vercel / Netlify
+
+No backend required.
+
+2.2 User Classes
+
+Customers (primary users)
+
+Store staff (WhatsApp receivers)
+
+3. Functional Requirements
+3.1 Homepage
+
+FR-1: System shall display a hero slideshow of featured collections.
+FR-2: Slideshow shall auto-rotate every 5 seconds.
+FR-3: Users shall manually navigate slides.
+FR-4: System shall display featured categories.
+FR-5: System shall display new arrivals.
+FR-6: System shall display trending products.
+
+3.2 Product Listing
+
+FR-7: Users shall browse products by category.
+FR-8: Users shall filter by:
+
+Category
+
+Collection
+
+Size
+
+FR-9: Users shall search products by name.
+
+3.3 Product Detail Page
+
+FR-10: System shall display:
+
+Product name
+
+Price
+
+Description
+
+Fabric
+
+Care instructions
+
+Available sizes
+
+Product images
+
+FR-11: User must select a size before ordering.
+FR-12: System shall generate WhatsApp message link dynamically.
+
+3.4 WhatsApp Integration
+
+FR-13: System shall open WhatsApp chat on button click.
+FR-14: Message shall auto-populate with:
+
+Product name
+
+Selected size
+
+Store location (if selected)
+
+FR-15: Floating WhatsApp button shall be visible on all pages.
+
+3.5 Store Locations
+
+FR-16: System shall display store locations.
+FR-17: System shall provide map redirect button.
+
+3.6 Responsive Design
+
+FR-18: System shall support:
+
+Mobile
+
+Tablet
+
+Desktop
+
+4. Non-Functional Requirements
+4.1 Performance
+
+Page load under 2.5 seconds
+
+Optimized images
+
+Lazy loading enabled
+
+4.2 Usability
+
+Mobile-first design
+
+Clear CTA buttons
+
+Minimal cognitive load
+
+4.3 Reliability
+
+99% uptime (hosting dependent)
+
+Broken link prevention
+
+4.4 Security
+
+No sensitive data storage
+
+No authentication required
+
+4.5 Accessibility
+
+Alt tags for images
+
+Keyboard navigable
+
+Minimum contrast ratio 4.5:1
+
+5. System Architecture
+
+Frontend:
+
+React SPA
+
+Data:
+
+Static JSON file
+
+Integration:
+
+WhatsApp API (Deep link)
+
+Deployment:
+
+CDN-based hosting
+
+6. Future Enhancements (Phase 2)
+
+Admin panel
+
+Headless CMS
+
+Stock management
+
+Online payments
+
+Inventory tracking
+
+Customer analytics
+
+Wishlist system
+
+7. Assumptions
+
+Orders are manually processed via WhatsApp.
+
+Stock is managed offline.
+
+Prices are manually updated in code.
+
+8. Constraints
+
+No backend
+
+No payment integration
+
+Static product data
+
+
+
+IMPORTANT
+Keep layout extremely clean.
+
+Optimize for mobile first.
+
+Add subtle motion to feel premium.
+
+
+APPLY THE EXACT STYLE IN STYLE.txt
