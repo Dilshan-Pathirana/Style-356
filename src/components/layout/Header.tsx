@@ -23,11 +23,11 @@ export function Header() {
   }, [location])
 
   const navLinks = [
-    { name: 'New Arrivals', path: '/' },
-    { name: 'Collections', path: '/' },
-    { name: 'Shop', path: '/' },
-    { name: 'About', path: '/' },
-    { name: 'Stores', path: '/' },
+    { name: 'New Arrivals', path: '/new-arrivals' },
+    { name: 'Collections', path: '/collections' },
+    { name: 'Shop', path: '/shop' },
+    { name: 'About', path: '/about' },
+    { name: 'Stores', path: '/stores' },
   ]
 
   return (
@@ -55,7 +55,7 @@ export function Header() {
               to="/"
               className="text-2xl md:text-3xl font-serif font-bold tracking-tight text-charcoal"
             >
-              KIARA
+              STYLE365
             </Link>
 
             {/* Desktop Navigation */}
@@ -124,7 +124,7 @@ export function Header() {
             >
               <div className="flex items-center justify-between mb-10">
                 <span className="text-2xl font-serif font-bold text-charcoal">
-                  KIARA
+                  STYLE365
                 </span>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -157,7 +157,7 @@ export function Header() {
                   Chat on WhatsApp
                 </a>
                 <p className="text-xs text-center text-gray-400">
-                  &copy; 2024 KIARA Fashion. All rights reserved.
+                  &copy; 2024 STYLE365 Fashion. All rights reserved.
                 </p>
               </div>
             </motion.div>

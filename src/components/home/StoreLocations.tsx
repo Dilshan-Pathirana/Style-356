@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { MapPin, Clock, ExternalLink } from 'lucide-react'
 import { stores } from '../../data/stores'
 
@@ -16,9 +17,12 @@ export function StoreLocations() {
               help you find your perfect fit.
             </p>
           </div>
-          <button className="text-charcoal font-medium border-b border-charcoal pb-1 hover:text-gold hover:border-gold transition-colors self-start md:self-auto">
+          <Link
+            to="/stores"
+            className="text-charcoal font-medium border-b border-charcoal pb-1 hover:text-gold hover:border-gold transition-colors self-start md:self-auto"
+          >
             View All Locations
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

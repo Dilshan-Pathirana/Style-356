@@ -57,7 +57,7 @@ export function SocialProof() {
         <div className="text-center mb-10">
           <div className="flex items-center justify-center gap-2 mb-2 text-charcoal">
             <Instagram className="w-5 h-5" />
-            <span className="font-medium">@kiara.fashion</span>
+            <span className="font-medium">@STYLE365</span>
           </div>
           <h2 className="text-2xl font-serif font-bold">Seen on You</h2>
         </div>

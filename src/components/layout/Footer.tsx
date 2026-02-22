@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-serif font-bold">KIARA</h2>
+            <h2 className="text-3xl font-serif font-bold">STYLE365</h2>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Redefining Sri Lankan luxury fashion with timeless elegance and
               contemporary design. Crafted for the modern woman.
@@ -39,31 +39,48 @@ export function Footer() {
           {/* Shop */}
           <div>
             <h3 className="text-lg font-serif font-medium mb-6 text-gold">
-              Shop
+              <Link to="/shop" className="hover:text-white transition-colors">
+                Shop
+              </Link>
             </h3>
             <ul className="space-y-4 text-sm text-gray-400">
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/new-arrivals"
+                  className="hover:text-white transition-colors"
+                >
                   New Arrivals
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/dresses"
+                  className="hover:text-white transition-colors"
+                >
                   Dresses
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/tops-blouses"
+                  className="hover:text-white transition-colors"
+                >
                   Tops & Blouses
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/co-ord-sets"
+                  className="hover:text-white transition-colors"
+                >
                   Co-ord Sets
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/essentials"
+                  className="hover:text-white transition-colors"
+                >
                   Essentials
                 </Link>
               </li>
@@ -73,31 +90,48 @@ export function Footer() {
           {/* Customer Care */}
           <div>
             <h3 className="text-lg font-serif font-medium mb-6 text-gold">
-              Customer Care
+              <Link to="/customer-care" className="hover:text-white transition-colors">
+                Customer Care
+              </Link>
             </h3>
             <ul className="space-y-4 text-sm text-gray-400">
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/contact-us"
+                  className="hover:text-white transition-colors"
+                >
                   Contact Us
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/shipping-returns"
+                  className="hover:text-white transition-colors"
+                >
                   Shipping & Returns
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/size-guide"
+                  className="hover:text-white transition-colors"
+                >
                   Size Guide
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/store-locations"
+                  className="hover:text-white transition-colors"
+                >
                   Store Locations
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-white transition-colors">
+                <Link
+                  to="/faq"
+                  className="hover:text-white transition-colors"
+                >
                   FAQ
                 </Link>
               </li>
@@ -124,7 +158,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 flex-shrink-0 text-gold" />
-                <span>hello@kiarafashion.lk</span>
+                <span>hello@STYLE365.lk</span>
               </li>
             </ul>
           </div>
@@ -132,7 +166,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} KIARA Fashion. All rights
+            &copy; {new Date().getFullYear()} STYLE365 Fashion. All rights
             reserved.
           </p>
           <div className="flex gap-6">

@@ -6,8 +6,9 @@ import { products } from '../../data/products'
 
 export function NewArrivals() {
   const scrollRef = useRef<HTMLDivElement>(null)
-  // Filter for new/trending items
-  const newArrivals = products.slice(0, 6)
+  const newArrivals = products
+    .filter((product) => product.tags.includes('new'))
+    .slice(0, 6)
 
   return (
     <section className="py-20 bg-offwhite overflow-hidden">

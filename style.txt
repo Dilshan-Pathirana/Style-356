@@ -430,7 +430,7 @@ export function SocialProof() {
         <div className="text-center mb-10">
           <div className="flex items-center justify-center gap-2 mb-2 text-charcoal">
             <Instagram className="w-5 h-5" />
-            <span className="font-medium">@kiara.fashion</span>
+            <span className="font-medium">@STYLE365.fashion</span>
           </div>
           <h2 className="text-2xl font-serif font-bold">Seen on You</h2>
         </div>
@@ -568,7 +568,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-serif font-bold">KIARA</h2>
+            <h2 className="text-3xl font-serif font-bold">STYLE365</h2>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Redefining Sri Lankan luxury fashion with timeless elegance and
               contemporary design. Crafted for the modern woman.
@@ -683,7 +683,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 flex-shrink-0 text-gold" />
-                <span>hello@kiarafashion.lk</span>
+                <span>hello@STYLE365fashion.lk</span>
               </li>
             </ul>
           </div>
@@ -691,7 +691,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} KIARA Fashion. All rights
+            &copy; {new Date().getFullYear()} STYLE365 Fashion. All rights
             reserved.
           </p>
           <div className="flex gap-6">
@@ -773,7 +773,7 @@ export function Header() {
               to="/"
               className="text-2xl md:text-3xl font-serif font-bold tracking-tight text-charcoal"
             >
-              KIARA
+              STYLE365
             </Link>
 
             {/* Desktop Navigation */}
@@ -854,7 +854,7 @@ export function Header() {
             >
               <div className="flex items-center justify-between mb-10">
                 <span className="text-2xl font-serif font-bold text-charcoal">
-                  KIARA
+                  STYLE365
                 </span>
                 <button
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -887,7 +887,7 @@ export function Header() {
                   Chat on WhatsApp
                 </a>
                 <p className="text-xs text-center text-gray-400">
-                  © 2024 KIARA Fashion. All rights reserved.
+                  © 2024 STYLE365 Fashion. All rights reserved.
                 </p>
               </div>
             </motion.div>
