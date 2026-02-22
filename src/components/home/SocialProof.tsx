@@ -31,14 +31,14 @@ const instaPosts = [
 
 export function SocialProof() {
   return (
-    <section className="py-20 bg-offwhite border-t border-gray-100">
+    <section className="py-12 md:py-20 bg-offwhite border-t border-gray-100">
       <div className="container mx-auto px-4 md:px-6">
         {/* Testimonials */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-12 md:mb-20">
           {testimonials.map((item) => (
             <div
               key={item.id}
-              className="bg-white p-8 rounded-lg shadow-sm text-center"
+              className="bg-white p-6 md:p-8 rounded-lg shadow-sm text-center"
             >
               <div className="flex justify-center gap-1 mb-4">
                 {[...Array(item.rating)].map((_, i) => (
@@ -54,12 +54,12 @@ export function SocialProof() {
         </div>
 
         {/* Instagram Feed */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-6 md:mb-10">
           <div className="flex items-center justify-center gap-2 mb-2 text-charcoal">
             <Instagram className="w-5 h-5" />
             <span className="font-medium">@STYLE365</span>
           </div>
-          <h2 className="text-2xl font-serif font-bold">Seen on You</h2>
+          <h2 className="text-xl md:text-2xl font-serif font-bold">Seen on You</h2>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

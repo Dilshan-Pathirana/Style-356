@@ -45,7 +45,7 @@ export function ProductCard({ product }: ProductCardProps) {
         </div>
 
         {/* Quick Action Overlay */}
-        <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 flex justify-center">
+        <div className="absolute inset-x-0 bottom-0 p-3 md:p-4 md:translate-y-full md:group-hover:translate-y-0 transition-transform duration-300 flex justify-center">
           <button className="bg-white/90 backdrop-blur-md text-charcoal px-4 py-2 rounded-full text-sm font-medium shadow-sm hover:bg-white flex items-center gap-2 w-full justify-center">
             <MessageCircle className="w-4 h-4 text-whatsapp" />
             <span>Inquire</span>

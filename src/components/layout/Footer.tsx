@@ -4,9 +4,9 @@ import { Instagram, Facebook, Twitter, MapPin, Mail, Phone } from 'lucide-react'
 
 export function Footer() {
   return (
-    <footer className="bg-charcoal text-white pt-16 pb-8">
+    <footer className="bg-charcoal text-white pt-12 md:pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mb-10 md:mb-16">
           {/* Brand */}
           <div className="space-y-6">
             <h2 className="text-3xl font-serif font-bold">STYLE365</h2>
@@ -43,11 +43,11 @@ export function Footer() {
                 Shop
               </Link>
             </h3>
-            <ul className="space-y-4 text-sm text-gray-400">
+            <ul className="space-y-3 md:space-y-4 text-sm text-gray-400">
               <li>
                 <Link
                   to="/new-arrivals"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   New Arrivals
                 </Link>
@@ -55,7 +55,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/dresses"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Dresses
                 </Link>
@@ -63,7 +63,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/tops-blouses"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Tops & Blouses
                 </Link>
@@ -71,7 +71,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/co-ord-sets"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Co-ord Sets
                 </Link>
@@ -79,7 +79,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/essentials"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Essentials
                 </Link>
@@ -94,11 +94,11 @@ export function Footer() {
                 Customer Care
               </Link>
             </h3>
-            <ul className="space-y-4 text-sm text-gray-400">
+            <ul className="space-y-3 md:space-y-4 text-sm text-gray-400">
               <li>
                 <Link
                   to="/contact-us"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Contact Us
                 </Link>
@@ -106,7 +106,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/shipping-returns"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Shipping & Returns
                 </Link>
@@ -114,7 +114,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/size-guide"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Size Guide
                 </Link>
@@ -122,7 +122,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/store-locations"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   Store Locations
                 </Link>
@@ -130,7 +130,7 @@ export function Footer() {
               <li>
                 <Link
                   to="/faq"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-white transition-colors inline-block py-1"
                 >
                   FAQ
                 </Link>

@@ -45,11 +45,11 @@ export function CategoryPage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="pt-24 pb-20 bg-offwhite min-h-screen"
+      className="pt-20 md:pt-24 pb-14 md:pb-20 bg-offwhite min-h-screen"
     >
       <div className="container mx-auto px-4 md:px-6">
         {/* Breadcrumbs */}
-        <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
+        <div className="hidden sm:flex items-center gap-2 text-sm text-gray-500 mb-8">
           <Link to="/" className="hover:text-charcoal">
             Home
           </Link>
@@ -60,8 +60,8 @@ export function CategoryPage() {
         </div>
 
         {/* Header */}
-        <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-charcoal mb-4 capitalize">
+        <div className="mb-8 md:mb-12">
+          <h1 className="text-3xl md:text-5xl font-serif font-bold text-charcoal mb-3 md:mb-4 capitalize">
             {categoryName}
           </h1>
           <p className="text-gray-500 max-w-2xl">
@@ -70,7 +70,7 @@ export function CategoryPage() {
         </div>
 
         {/* Filters & Sort */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8 pb-6 border-b border-gray-200">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 md:gap-4 mb-6 md:mb-8 pb-4 md:pb-6 border-b border-gray-200">
           <div className="flex items-center gap-4">
             <button className="flex items-center gap-2 text-sm font-medium text-charcoal hover:text-gold transition-colors">
               <Filter className="w-4 h-4" />
@@ -81,12 +81,12 @@ export function CategoryPage() {
             </span>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-3 w-full sm:w-auto">
             <span className="text-sm text-gray-500">Sort by:</span>
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="text-sm border-none bg-transparent font-medium text-charcoal focus:ring-0 cursor-pointer"
+              className="text-sm border border-gray-200 bg-white font-medium text-charcoal rounded-md px-2.5 py-1.5 focus:ring-0 cursor-pointer w-full sm:w-auto"
             >
               <option value="featured">Featured</option>
               <option value="newest">Newest Arrivals</option>
@@ -98,7 +98,7 @@ export function CategoryPage() {
 
         {/* Product Grid */}
         {filteredProducts.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-8">
             {filteredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}

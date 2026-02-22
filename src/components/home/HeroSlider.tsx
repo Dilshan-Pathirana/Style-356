@@ -48,7 +48,7 @@ export function HeroSlider() {
     setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
 
   return (
-    <section className="relative h-[85vh] w-full overflow-hidden bg-charcoal">
+    <section className="relative h-[72svh] md:h-[85vh] w-full overflow-hidden bg-charcoal">
       <AnimatePresence mode="wait">
         <motion.div
           key={current}
@@ -75,12 +75,12 @@ export function HeroSlider() {
 
           {/* Content */}
           <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-            <div className="max-w-4xl mx-auto text-white space-y-6">
+            <div className="max-w-4xl mx-auto text-white space-y-4 md:space-y-6">
               <motion.span
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.8 }}
-                className="inline-block text-sm md:text-base uppercase tracking-[0.3em] font-medium text-gold"
+                className="inline-block text-xs sm:text-sm md:text-base uppercase tracking-[0.22em] md:tracking-[0.3em] font-medium text-gold"
               >
                 {slides[current].collection}
               </motion.span>
@@ -89,7 +89,7 @@ export function HeroSlider() {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.7, duration: 0.8 }}
-                className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold leading-tight"
+                className="text-3xl sm:text-4xl md:text-7xl lg:text-8xl font-serif font-bold leading-tight"
               >
                 {slides[current].title}
               </motion.h1>
@@ -98,7 +98,7 @@ export function HeroSlider() {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.9, duration: 0.8 }}
-                className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto font-light"
+                className="text-base md:text-xl text-gray-200 max-w-2xl mx-auto font-light"
               >
                 {slides[current].tagline}
               </motion.p>
@@ -107,11 +107,11 @@ export function HeroSlider() {
                 initial={{ y: 30, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 1.1, duration: 0.8 }}
-                className="pt-8"
+                className="pt-4 md:pt-8"
               >
                 <Link
-                  to="/"
-                  className="inline-flex items-center gap-3 bg-white text-charcoal px-8 py-4 rounded-full font-medium hover:bg-gold hover:text-white transition-all duration-300 group"
+                  to="/collections"
+                  className="inline-flex items-center gap-3 bg-white text-charcoal px-6 md:px-8 py-3 md:py-4 rounded-full font-medium hover:bg-gold hover:text-white transition-all duration-300 group"
                 >
                   {slides[current].cta}
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -139,7 +139,7 @@ export function HeroSlider() {
       </button>
 
       {/* Progress Indicators */}
-      <div className="absolute bottom-10 left-0 right-0 flex justify-center gap-3 z-10">
+      <div className="absolute bottom-6 md:bottom-10 left-0 right-0 flex justify-center gap-2 md:gap-3 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
